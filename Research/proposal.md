@@ -19,5 +19,11 @@ Our installation combines historical and contemporary modes of movement, visuali
 We will provide a laptop with projection-worthy web-view; we'll also have an accompanying web-version of the installation.
 We will require two projectors.
 
-## DATA + REFERENCES
+## DATA
 * [Marine Traffic API](http://www.marinetraffic.com/)
+
+## References
+* [Interesting paper on how noise and boat traffic affects marine ecosystems](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0040582)
+* [Details on the affects of "monumentalizing" spaces - Governor's Island included](http://bioscience.oxfordjournals.org/content/51/4/278.full)
+* [Civil War Island Executions!](http://civilwarscholars.com/2012/01/lincoln-beall-and-the-gallows/)
+* [Brief History of Governor's Island](http://www.nps.gov/gois/historyculture/a-brief-history-of-governors-island.htm)
