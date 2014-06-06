@@ -20,3 +20,5 @@ grunt --debug
 ##Questions
 * Does the venue have wifi?
 * What resolution is the projector?
+* Access to historical assets or resources? Special pass to "tunnel"?
+*
