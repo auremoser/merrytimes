@@ -1,13 +1,17 @@
-$stageWidth = 1000px
+$stageWidth = 1280px
+$stageHeight = 768px
 
 .stage
 	position absolute
-	top 0
-	right 0
-	bottom 0
-	left 0
+	top auto
+	right auto
+	bottom auto
+	left auto
+	width $stageWidth
+	height $stageHeight
 	perspective 100px
 	background #333
+	overflow hidden
 
 img
 	position absolute
@@ -21,6 +25,29 @@ img
 	animation-timing-function ease-in-out
 	// animation-fill-mode forwards
 	// animation-delay 2s
+
+
+$skylineWidth = 4010px
+
+#manhattan-skyline
+	position absolute
+	width $skylineWidth
+	background-image url(img/manhattan-skyline.jpg)
+	top 0
+	bottom 0
+
+	animation-name skyline
+	animation-duration 12s
+	animation-iteration-count infinite
+	animation-direction alternate
+	animation-timing-function ease-in-out
+
+@keyframes skyline
+	0%
+		transform translate(0, 0)
+	100%
+		transform translate(-($skylineWidth - $stageWidth), 0)
+
 
 
 #coastguard1
