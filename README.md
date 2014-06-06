@@ -5,6 +5,7 @@ merrytimes visualization for governor's island holocenter install
 ## How to build
 
 ```
+npm install -g grunt-cli
 npm install
 grunt --debug
 ```
