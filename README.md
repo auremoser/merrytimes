@@ -53,4 +53,5 @@ do not want to interact with you, are there kids running around, etc.)
 
 ## References
 [How to keep it Running Forever](https://github.com/laserpilot/Installation_Up_4evr/blob/master/Installation_Up_4evr.md)
+
 [Blair's Guide to Projections](http://www.creativeapplications.net/tutorials/guide-to-projectors-for-interactive-installations/)
