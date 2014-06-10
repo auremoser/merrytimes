@@ -1,0 +1,19 @@
+#coastguard
+	position absolute
+	bottom 8%
+	left 30%
+	width $stageWidth * 0.3
+
+	animation-name coastguard
+	animation-duration 7s
+	animation-iteration-count infinite
+	animation-direction alternate
+	animation-timing-function ease-in-out
+
+@keyframes coastguard
+	10%
+		transform translate(0, 0)
+	90%
+		transform translate($stageWidth, 0)
+	100%
+		transform translate($stageWidth, 0)

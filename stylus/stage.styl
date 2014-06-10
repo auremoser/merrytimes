@@ -1,62 +1,35 @@
+$stageWidth = 640px
+$stageHeight = 360px
 $stageWidth = 1280px
 $stageHeight = 768px
 
 .stage
-	position absolute
-	top auto
-	right auto
-	bottom auto
-	left auto
+	margin 10px auto
+	position relative
 	width $stageWidth
 	height $stageHeight
-	perspective 100px
-	background #333
 	overflow hidden
+	background #f90
 
-img
-	position absolute
-
-
-.ship
-	animation-name left-to-right
-	animation-duration 4s
-	animation-iteration-count infinite
-	animation-direction alternate
-	animation-timing-function ease-in-out
-	// animation-fill-mode forwards
-	// animation-delay 2s
-
-
-$skylineWidth = 4010px
-
-#manhattan-skyline
-	position absolute
-	width $skylineWidth
+$panoWidth = $stageWidth * 3
+$panoHeight = $stageHeight
+.panorama
+	width $panoWidth
+	height $panoHeight
+	background #09f
 	background-image url(img/manhattan-skyline.jpg)
-	top 0
-	bottom 0
+	background-size cover
 
-	animation-name skyline
-	animation-duration 12s
+	animation-name panorama-pan
+	animation-duration 13s
 	animation-iteration-count infinite
 	animation-direction alternate
 	animation-timing-function ease-in-out
 
-@keyframes skyline
+@keyframes panorama-pan
 	0%
 		transform translate(0, 0)
 	100%
-		transform translate(-($skylineWidth - $stageWidth), 0)
+		transform translate(-($panoWidth - $stageWidth), 0)
 
-
-
-#coastguard1
-	top 100px
-#coastguard2
-	top 400px
-
-#coastguard3
-	bottom 400px
-#coastguard4
-	bottom 100px
 
