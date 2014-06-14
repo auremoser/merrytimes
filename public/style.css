@@ -942,6 +942,12 @@
   left: 1114.8046875px;
   width: 448px;
 }
+#cannon {
+  position: absolute;
+  left: 3567.375px;
+  top: 216px;
+  width: 288px;
+}
 #drum {
   bottom: 0;
   left: 0;
