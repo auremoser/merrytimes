@@ -499,6 +499,12 @@
     transform: translate(0, 0);
   }
 }
+#drum {
+  position: absolute;
+  left: 4370.034375px;
+  top: 144px;
+  width: 108px;
+}
 #coastguard {
   position: absolute;
   bottom: 8%;
