@@ -38,6 +38,8 @@ $layerWidth = $stageHeight * $layerRatio
 	animation-iteration-count infinite
 	animation-direction alternate
 	animation-timing-function ease-in-out
+	img
+		position absolute
 
 .layer0
 	background-image url(img/pano1.jpg)
@@ -60,3 +62,13 @@ $layerWidth = $stageHeight * $layerRatio
 		transform translate3d(0, 0, 200px)
 	100%
 		transform translate3d(-($layerWidth - $stageWidth), 0, 200px)
+
+.layer2
+	// animation-name layer2pan
+	border 4px dashed #0c9
+
+@keyframes layer2pan
+	0%
+		transform translate3d(0, 0, 400px)
+	100%
+		transform translate3d(-($layerWidth - $stageWidth), 0, 400px)

@@ -1,0 +1,20 @@
+#ferry
+	top $layerHeight*0.6
+	left $layerWidth*0.2
+	width $stageWidth*0.5
+
+	animation-name ferry
+	animation-duration 7s
+	animation-iteration-count infinite
+	animation-direction alternate
+	animation-timing-function ease-in-out
+
+@keyframes ferry
+	0%
+		transform translateX(0)
+	10%
+		transform translateX(0)
+	90%
+		transform translateX($stageWidth)
+	100%
+		transform translateX($stageWidth)
