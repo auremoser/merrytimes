@@ -1,13 +1,6 @@
-$totalTime = 40s
-$stageWidth = 640px
-$stageHeight = 360px
-// $stageWidth = 1280px
-// $stageHeight = 768px
-
 .stage
-	// overflow hidden
-	margin 100px
-	// margin 100px auto
+	overflow hidden
+	margin 0
 	position relative
 	width $stageWidth
 	height $stageHeight
@@ -16,13 +9,7 @@ $stageHeight = 360px
 	perspective-origin bottom
 
 .stage-preview
-	position absolute
-	width $stageWidth
-	height $stageHeight
-	top 0
-	left 0
-	background rgba(255, 144, 0, .75)
-
+	display none
 
 $layerRatio = (9513/768)px
 $layerHeight = $stageHeight
@@ -44,8 +31,7 @@ $layerWidth = $stageHeight * $layerRatio
 .layer0
 	background-image url(img/pano1.jpg)
 	background-size cover
-	// animation-name layer0pan
-	border 4px dashed #c00
+	animation-name layer0pan
 
 @keyframes layer0pan
 	0%
@@ -54,8 +40,7 @@ $layerWidth = $stageHeight * $layerRatio
 		transform translate(-($layerWidth - $stageWidth), 0)
 
 .layer1
-	// animation-name layer1pan
-	border 4px dashed #f90
+	animation-name layer1pan
 
 @keyframes layer1pan
 	0%
@@ -64,8 +49,7 @@ $layerWidth = $stageHeight * $layerRatio
 		transform translate3d(-($layerWidth - $stageWidth), 0, 200px)
 
 .layer2
-	// animation-name layer2pan
-	border 4px dashed #0c9
+	animation-name layer2pan
 
 @keyframes layer2pan
 	0%
