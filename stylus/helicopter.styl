@@ -6,31 +6,31 @@ $heliWidth = $stageHeight * 0.2
 	top 0
 	width $heliWidth
 
-	animation-name heli
-	animation-duration 13s
+	// animation-name heli
+	animation-duration $totalTime*0.3
 	animation-iteration-count infinite
 	animation-timing-function ease-in-out
 
 @keyframes heli
 	0%
-		transform translate(-($panoWidth*0.1), $stageHeight*.4) 		scaleX(1)
+		transform translate(-($layerWidth*0.1), $stageHeight*.4)	scaleX(1)
 	12%
-		transform translate($panoWidth*0.2, $stageHeight*.2) 		scaleX(1)
+		transform translate($layerWidth*0.2, $stageHeight*.2)	scaleX(1)
 	25%
-		transform translate($panoWidth*0.3, $stageHeight*.1) 		scaleX(1)
+		transform translate($layerWidth*0.3, $stageHeight*.1)	scaleX(1)
 	37%
-		transform translate($panoWidth*0.4, $stageHeight*.65) 		scaleX(1)
+		transform translate($layerWidth*0.4, $stageHeight*.65)	scaleX(1)
 	49%
-		transform translate($panoWidth*1.1, 30px) 		scaleX(1)
+		transform translate($layerWidth*1.1, 30px)	scaleX(1)
 	50%
-		transform translate($panoWidth*1.1, 30px) 		scaleX(-1)
+		transform translate($layerWidth*1.1, 30px)	scaleX(-1)
 	63%
-		transform translate($panoWidth*0.6, 80px) 		scaleX(-1)
+		transform translate($layerWidth*0.6, 80px)	scaleX(-1)
 	75%
-		transform translate($panoWidth*0.5, 10px) 		scaleX(-1)
+		transform translate($layerWidth*0.5, 10px)	scaleX(-1)
 	88%
-		transform translate($panoWidth*0.2, 40px) 		scaleX(-1)
+		transform translate($layerWidth*0.2, 40px)	scaleX(-1)
 	100%
-		transform translate(-($panoWidth*0.1), 120px) 		scaleX(-1)
+		transform translate(-($layerWidth*0.1), 120px)	scaleX(-1)
 
 

@@ -1,35 +1,62 @@
+$totalTime = 40s
 $stageWidth = 640px
 $stageHeight = 360px
-$stageWidth = 1280px
-$stageHeight = 768px
+// $stageWidth = 1280px
+// $stageHeight = 768px
 
 .stage
-	margin 10px auto
+	// overflow hidden
+	margin 100px
+	// margin 100px auto
 	position relative
 	width $stageWidth
 	height $stageHeight
-	overflow hidden
-	background #f90
+	backface-visibility hidden
+	perspective 1000px
+	perspective-origin bottom
 
-$panoWidth = $stageWidth * 3
-$panoHeight = $stageHeight
-.panorama
-	width $panoWidth
-	height $panoHeight
-	background #09f
-	background-image url(img/manhattan-skyline.jpg)
-	background-size cover
+.stage-preview
+	position absolute
+	width $stageWidth
+	height $stageHeight
+	top 0
+	left 0
+	background rgba(255, 144, 0, .75)
 
-	animation-name panorama-pan
-	animation-duration 13s
+
+$layerRatio = (9513/768)px
+$layerHeight = $stageHeight
+$layerWidth = $stageHeight * $layerRatio
+
+.layer
+	position absolute
+	top 0
+	left 0
+	width $layerWidth
+	height $layerHeight
+	animation-duration $totalTime
 	animation-iteration-count infinite
 	animation-direction alternate
 	animation-timing-function ease-in-out
 
-@keyframes panorama-pan
+.layer0
+	background-image url(img/pano1.jpg)
+	background-size cover
+	// animation-name layer0pan
+	border 4px dashed #c00
+
+@keyframes layer0pan
 	0%
 		transform translate(0, 0)
 	100%
-		transform translate(-($panoWidth - $stageWidth), 0)
+		transform translate(-($layerWidth - $stageWidth), 0)
 
+.layer1
+	// animation-name layer1pan
+	border 4px dashed #f90
 
+@keyframes layer1pan
+	0%
+		transform translate3d(0, 0, 200px)
+	100%
+		transform translate3d(-($layerWidth - $stageWidth), 0, 200px)
