@@ -513,11 +513,11 @@ body {
   -o-animation-name: ferry;
   -ms-animation-name: ferry;
   animation-name: ferry;
-  -webkit-animation-duration: 7s;
-  -moz-animation-duration: 7s;
-  -o-animation-duration: 7s;
-  -ms-animation-duration: 7s;
-  animation-duration: 7s;
+  -webkit-animation-duration: 66s;
+  -moz-animation-duration: 66s;
+  -o-animation-duration: 66s;
+  -ms-animation-duration: 66s;
+  animation-duration: 66s;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
@@ -1397,4 +1397,15 @@ body {
   bottom: 0;
   left: 10033.2421875px;
   height: 360px;
+}
+#truchet {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("img/Truchet_tiling.svg");
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
 }
