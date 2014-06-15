@@ -67,7 +67,10 @@ grunt --debug
 * Don't make any assumptions about who is responsible for anything; be prepared to do everything
 * Can we set everything up so that this works
 
-
+## Music
+DRIP: https://www.freesound.org/people/jamesabels/sounds/166986/
+SHIPYARD: https://www.freesound.org/people/timsc/sounds/179900/
+SHOREWAVES: https://www.freesound.org/people/sinatra314/sounds/58411/
 
 ## References
 [How to keep it Running Forever](https://github.com/laserpilot/Installation_Up_4evr/blob/master/Installation_Up_4evr.md)
