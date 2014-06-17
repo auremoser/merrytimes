@@ -2,6 +2,17 @@
 
 merrytimes visualization for governor's island holocenter install
 
+## How to run
+
+1. Turn on projector; turn on laptop
+2. Chrome should open automatically as will iTunes
+3. Please play iTunes
+4. Switch Chrome to fullscreen cmd-shift-F
+
+If it crashes or gets slow, close Chrome and reopen. There is also a bookmark, below the search bar, to the live version on the web which we can update to fix bugs remotely from if needed.
+
+http://auremoser.github.io/merrytimes/
+
 ## How to build
 
 ```
