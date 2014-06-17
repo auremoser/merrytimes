@@ -1,0 +1,19 @@
+$blimpWidth = $stageHeight * 0.4
+
+#blimp
+	left $layerWidth*0.2
+	bottom $stageHeight*0.65
+	width $blimpWidth
+
+	animation-name blimp
+	animation-duration $totalTime*2
+	animation-iteration-count infinite
+	animation-timing-function ease-in-out
+
+@keyframes blimp
+	0%
+		transform translateX(0)
+	50%
+		transform translateX($stageWidth*2)
+	100%
+		transform translateX(0)

@@ -1,0 +1,20 @@
+#ring
+	top $stageHeight
+	left $layerWidth*0.18
+	width $stageWidth*0.3
+
+	animation-name ring
+	animation-duration $totalTime*0.1
+	animation-iteration-count infinite
+	// animation-direction alternate
+	animation-timing-function ease-in-out
+
+@keyframes ring
+	0%
+		transform translate(0, 0) rotate(0deg)
+	50%
+		transform translate(0, -(0.5*$stageHeight)) rotate(360deg)
+	100%
+		transform translate(0, 0) rotate(720deg)
+
+

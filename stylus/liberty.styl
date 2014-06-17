@@ -1,0 +1,21 @@
+$libertyHeight = $stageHeight*0.8
+
+#liberty
+	position absolute
+	left $layerWidth*0.113
+	bottom 0
+	height $libertyHeight
+
+	animation-name liberty
+	animation-duration $totalTime*0.2
+	animation-iteration-count infinite
+	animation-direction alternate
+	// animation-timing-function ease-in-out
+
+@keyframes liberty
+	0%
+		transform translate(0, $libertyHeight + 10px)
+	80%
+		transform translate(0, 0)
+
+

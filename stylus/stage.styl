@@ -1,0 +1,57 @@
+.stage
+	overflow hidden
+	position relative
+	width $stageWidth
+	height $stageHeight
+	backface-visibility hidden
+	perspective 1000px
+	perspective-origin bottom
+
+.stage-preview
+	display none
+
+$layerRatio = (9513/768)px
+$layerHeight = $stageHeight
+$layerWidth = $stageHeight * $layerRatio
+
+.layer
+	position absolute
+	top 0
+	left 0
+	width $layerWidth
+	height $layerHeight
+	animation-duration $totalTime
+	animation-iteration-count infinite
+	animation-direction alternate
+	animation-timing-function ease-in-out
+	img
+		position absolute
+
+.layer0
+	background-image url(img/pano1.jpg)
+	background-size cover
+	animation-name layer0pan
+
+@keyframes layer0pan
+	0%
+		transform translate(0, 0)
+	100%
+		transform translate(-($layerWidth - $stageWidth), 0)
+
+.layer1
+	animation-name layer1pan
+
+@keyframes layer1pan
+	0%
+		transform translate3d(0, 0, 200px)
+	100%
+		transform translate3d(-($layerWidth - $stageWidth), 0, 200px)
+
+.layer2
+	animation-name layer2pan
+
+@keyframes layer2pan
+	0%
+		transform translate3d(0, 0, 400px)
+	100%
+		transform translate3d(-($layerWidth - $stageWidth), 0, 400px)
